@@ -1,0 +1,50 @@
+input of the project:
+
+placeholder
+data X
+    usually a matrix
+label Y
+    usually a matrix
+batch size
+
+setting
+number of neuron in input layer
+    int
+number of hidden layers/ dense layer
+number of neuron in each hidden layer
+number of output layer
+
+setting:
+    activation function
+        sigmoid, relu, softmax
+        default relu
+    optimizer
+        gradient descent, gradient ascent, adam, adagrad,
+        default gradient descend
+    learning rate
+        range 0-1
+        default 0.01
+    loss
+        categorical cross-entropy
+
+initiation
+    weights number = hidden layer number + 1
+    bias number = total number of neuron - output neuron number
+    value of each parameter = np.random
+
+forward propagation (non batch)
+    input x dot weight + bias
+    (input x dot weight + bias ) dot weight + bias
+    def fprog(number_of_hidden_layer, X, Y):
+
+forward propagation (batch)
+    input X dot weight + bias
+    (input X dot weight + bias ) dot weight + bias
+    def fprog(number_of_hidden_layer, X, Y):
+
+number of python file
+input.py
+forward propagation
+backward propagation
+activation function
+loss function

@@ -1,0 +1,47 @@
+class
+Layer_Dense
+Layer_Dropout
+Layer_Input
+Activation_ReLU
+Activation_Softmax
+Activation_Sigmoid
+Activation_Linear
+Optimizer_Adagrad
+Optimizer_RMSprop
+Optimizer_Adam
+Loss
+Loss_CategoricalCrossentropy(Loss)
+Activation_Softmax_Loss_CategoricalCrossentropy()
+Loss_BineryCrossentropy(Loss)
+Loss_MeanSquaredError(Loss)
+Accuracy
+Accuracy_Categorical(Accuracy)
+Accuracy_Regression(Accuracy)
+
+Model
+    def __init__(self):
+    def add(self, layer):
+    def set(self, *, loss=None, optimizer=None, accuracy=None):
+    def finalize(self):
+    def train(self, X, y, *, epochs=1, batch_size=None, print_every=1, validation_data=None):
+    def evaluate(self, X_val, y_val, *, batch_size=None):
+    def predict(self, X, *, batch_size=None):
+    def forward(self, X, training):
+    def backward(self, output, y):
+    def get_parameters(self):
+    def set_parameters(self, parameters):
+    def save_parameters(self, path):
+    def load_parameters(self, path):
+    def save(self, path):
+    def load(path):
+def load_mnist_dataset(dataset, path):
+def create_data_mnist(path):
+
+
+
+
+
+
+
+
+
